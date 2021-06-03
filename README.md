@@ -1,24 +1,17 @@
-# README
+user has_many courses
+courses has_many users
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+has many through 
+user has_many courses, through enrollments 
+courses has_many users, through enrollments
 
-Things you may want to cover:
 
-* Ruby version
+has many one to many relationship
+  one video has many comments 
+  all comments belong to the video
+has one, one to one relationship
+  one person has a single address 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+has many through, many to many relationship
+  billboard has many song, through artist 
+  songs has many billboard through artist
